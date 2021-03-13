@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <style>
+            #mapid { height: 500px; width: 1110px; }
+        </style>
+    </head>
+    <body>
+        <div id="mapid"></div>
+        <script type="text/javascript">
+
+            var mymap = L.map('mapid').setView([50.963, 3.756], 13);
+
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 18, attribution: '<a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a>'}).addTo(mymap);
+
+            L.marker([50.972730, 3.786744]).addTo(mymap).bindPopup("<p><b>Bosuitbreiding</b></p><p>In november 2020 heeft Natuurpunt hier 2000 bomen aangeplant.</p>");
+            L.marker([50.965021, 3.794623]).addTo(mymap).bindPopup("<p><b>Bosuitbreiding</b></p><p>BOS+ heeft hier enkele percelen bebost.</p>");
+
+        </script>
+    </body>
+</html>
