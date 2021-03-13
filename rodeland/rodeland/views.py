@@ -3,8 +3,6 @@
 
 from django.shortcuts import render
 
-from actions.models import Realisations
-
 
 def start(request):
     return render(request, 'start.html')
