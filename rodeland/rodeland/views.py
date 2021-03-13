@@ -16,8 +16,7 @@ def wie(request):
     return render(request, 'wie.html')
 
 def acties(request):
-    realisations = Realisations.objects.all()
-    return render(request, 'acties.html', context={'realsiations': realisations}})
+    return render(request, 'acties.html')
 
 def contact(request):
     return render(request, 'contact.html')
