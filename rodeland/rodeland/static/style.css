@@ -99,3 +99,29 @@ a.text {
     background-color: #004434;
     border-color: #004434;
 }
+
+#infomoment #title {
+    color: #004434;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+#infomoment #sub {
+    color: #004434;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+#infomoment #sub a {
+    color: #004434;
+    font-weight: bold;
+    font-size: 1.50rem;
+}
+
+#infomoment .section_title {
+    color: #004434;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-bottom-color: #F5906D;
+    border-bottom-style: solid;
+}

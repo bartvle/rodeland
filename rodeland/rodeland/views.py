@@ -18,3 +18,7 @@ def acties(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def infomoment(request):
+    return render(request, 'infomoment.html')
+    
