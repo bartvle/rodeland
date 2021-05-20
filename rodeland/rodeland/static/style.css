@@ -66,6 +66,14 @@ a.text {
     color: #F5906D;
 }
 
+a.underline {
+    text-decoration: underline;
+}
+
+a.color1 {
+    color: #004434;
+}
+
 .my-toggler-icon {
     background-color: #004434;
 }
@@ -124,4 +132,9 @@ a.text {
     font-size: 1.25rem;
     border-bottom-color: #F5906D;
     border-bottom-style: solid;
+}
+
+#startbanner{
+    background-color: #F5906D;
+    color: #004434;
 }
