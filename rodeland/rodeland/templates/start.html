@@ -3,18 +3,18 @@
 {% block embody %}
 <div id="start" class="mt-4">
     <div class="container">
-        <div id="startbanner" class="text-center p-3 mb-4">
+        <!-- <div id="startbanner" class="text-center p-3 mb-4">
             <p>Online infomoment Rodeland voor land- en tuinbouwers op woensdag 9 juni!</p>
             <p class="mb-0"><a class="underline color1" href="/infomoment">Klik hier voor meer info en inschrijving.</a></p>
-        </div>
+        </div> -->
         <div class="row pb-5">
             <div class="col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button >
+                        <button  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button >
+                        <button  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button >
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="/static/images/foto1.jpg" alt="First slide">
@@ -26,43 +26,92 @@
                             <img class="d-block w-100" src="/static/images/foto3.jpg" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <button  class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="visually-hidden">Previous</span>
+                    </button >
+                    <button  class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                        <span class="visually-hidden">Next</span>
+                    </button >
                 </div>
             </div>
         </div>
-        <h2 class="pb-3">Welkom op de website van het Rodelandproject!</h2>
         <div class="row">
-            <div class="col-lg-12">                
-                <p>
-                    Hier vind je een antwoord op de vraag wat het Rodelandproject precies inhoudt, wat de <a class="text" href="/wat">14 projectdoelstellingen</a> zijn, wie de <a class="text" href="/wie">projectpartners</a> zijn, welke <a class="text" href="/acties">acties<a> in 2020 werden gerealiseerd en wat er op de planning staat in 2021...
-                </p>
-                <p>
-                    De website en het project zijn in volle opbouw, je zal hier regelmatig iets nieuws ontdekken.
-                </p>
+            <div class="col-lg-9">
+                <h2 class="pb-3">Welkom op de website van het Rodelandproject!</h2>
+                <div class="row">
+                    <div class="col-lg-12">                
+                        <p>
+                            Hier vind je een antwoord op de vraag wat het Rodelandproject precies inhoudt, wat de <a class="text" href="/wat">14 projectdoelstellingen</a> zijn, wie de <a class="text" href="/wie">projectpartners</a> zijn, welke <a class="text" href="/acties">acties<a> in 2020 werden gerealiseerd en wat er op de planning staat in 2021...
+                        </p>
+                        <p>
+                            De website en het project zijn in volle opbouw, je zal hier regelmatig iets nieuws ontdekken.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-color3 p-3 mt-3 mb-2">
+                    <h4 class="m-0">Herbekijk het infomoment voor land- en tuinbouwers over Rodeland</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">                
+                        <p>
+                            Op 9 juni vond het eerste infomoment voor land- en tuinbouwers plaats. Dit ging online door, je kan de presentaties en de opnames hier downloaden per thema.
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Voorstelling Rodelandproject</b> door Sofie Van Brussel – Projectcoördinator Rodeland
+                                <br />
+                                <a class="text" href="/static/Rodelandproject_infoavond_Landbouw_Rodeland_20210609.pdf" download>Download presentatie</a> | <a class="text" href="https://www.youtube.com/watch?v=6nGJDNGqFdc" target="_blank">Bekijk opname</a>
+                            </li>
+                            <li>
+                                <b>Korte keten</b> door Caroline Vlaeminck – SOLVA-Oosterzele
+                                <br />
+                                <a class="text" href="/static/Korte_keten_infomoment_Landbouw_Rodeland_20210609.pdf" download>Download presentatie</a> | <a class="text" href="https://www.youtube.com/watch?v=WVtJdl7MujY" target="_blank">Bekijk opname</a>
+                            </li>
+                            <li>
+                                <b>Telen van baktarwe voor Lokaal Brood</b> door Frank Van Boxstael – HOGENT
+                                <br />
+                                <a class="text" href="/static/Lokaal_Brood_infomoment_Landbouw_Rodeland_20210609.pdf" download>Download presentatie</a> | <a class="text" href="https://www.youtube.com/watch?v=Pouw9CnQ0TA" target="_blank">Bekijk opname</a>
+                            </li>
+                            <li>
+                                <b>Kleine landschapselementen en nuttige toepassingen van landschapshout</b> door Mathias D’Hooghe – Boerennatuur Vlaanderen
+                                <br />
+                                <a class="text" href="/static/KLE_infomoment_Landbouw_Rodeland_20210609.pdf" download>Download presentatie</a> | <a class="text" href="https://www.youtube.com/watch?v=ii9SQPCq0ZE" target="_blank">Bekijk opname</a>
+                            </li>
+                            <li>
+                                <b>Aanpak droogte</b> door Koen Fauconnier – Provincie Oost-Vlaanderen, Dienst Landbouw & Platteland
+                                <br />
+                                <a class="text" href="/static/Droogte_infomoment_Landbouw_Rodeland_20210609.pdf" download>Download presentatie</a> | <a class="text" href="https://www.youtube.com/watch?v=tKxIlG6qepY" target="_blank">Bekijk opname</a>
+                            </li>
+                        </ul>
+                        <p>
+                            Ben je land- of tuinbouwer in Oosterzele, Merelbeke, Melle of Gavere en wil je graag op de hoogte gehouden worden van het Rodelandproject? Of heb je na het zien van deze opnames interesse om in de toekomst deel te nemen aan een van onze initiatieven? Vul dan zeker vrijblijvend deze vragenlijst in: <a class="text" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc2tzXBH6Yy9_e61PCLZwsM1wFt_rr4pFELMfGd1mj1eqCE1Q/viewform?usp=sf_link">https://docs.google.com/forms/d/e/1FAIpQLSc2tzXBH6Yy9_e61PCLZwsM1wFt_rr4pFELMfGd1mj1eqCE1Q/viewform?usp=sf_link</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-color3 p-3 mt-3 mb-2">
+                    <h4 class="m-0">Save the date: zondagnamiddag 12 september</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">                
+                        <p>
+                            Op zondag 12 september vindt de tweede editie van de Rodelanddag plaats. Dan stellen we het Rodelandproject graag voor aan de inwoners van Gavere, Melle, Merelbeke en Oosterzele tijdens een mooie en interessante fietstocht door het gebied.
+                        </p>
+                        <p>
+                            De Rodelanddag 2020 was een bijzondere editie van fietsen per bubbel en maximale spreiding in de tijd (de Rodelanddag duurde toen maar liefst anderhalve maand!) en met uitleg op infopanelen in plaats van ter plaatse door onze projectpartners.
+                        </p>
+                        <p>
+                            In 2021 rekenen we erop om eindelijk live te kunnen gaan! De Rodelandpartners ontmoeten jullie graag op zondagnamiddag 12 september in het projectgebied.
+                        </p>
+                        <p>
+                            Voor meer info, check regelmatig onze <a class="text" href="https://www.facebook.com/Rodelandproject/" target="_blank">Facebookpagina</a>.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <h4 class="pb-3 pt-4">Save the date: zondagnamiddag 12 september</h4>
-        <div class="row">
-            <div class="col-lg-12">                
-                <p>
-                    Op zondag 12 september vindt de tweede editie van de Rodelanddag plaats. Dan stellen we het Rodelandproject graag voor aan de inwoners van Gavere, Melle, Merelbeke en Oosterzele tijdens een mooie en interessante fietstocht door het gebied.
-                </p>
-                <p>
-                    De Rodelanddag 2020 was een bijzondere editie van fietsen per bubbel en maximale spreiding in de tijd (de Rodelanddag duurde toen maar liefst anderhalve maand!) en met uitleg op infopanelen in plaats van ter plaatse door onze projectpartners.
-                </p>
-                <p>
-                    In 2021 rekenen we erop om eindelijk live te kunnen gaan! De Rodelandpartners ontmoeten jullie graag op zondagnamiddag 12 september in het projectgebied.
-                </p>
-                <p>
-                    Voor meer info, check regelmatig onze <a class="text" href="https://www.facebook.com/Rodelandproject/" target="_blank">Facebookpagina</a>.
-                </p>
+            <div class="col-lg-3">
+
             </div>
         </div>
     </div>
