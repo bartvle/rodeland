@@ -16,6 +16,9 @@ def wie(request):
 def acties(request):
     return render(request, 'acties.html')
 
+def pdpo(request):
+    return render(request, 'pdpo.html')
+
 def contact(request):
     return render(request, 'contact.html')
 
