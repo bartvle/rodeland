@@ -26,6 +26,7 @@ urlpatterns = [
     path('acties', views.acties, name='acties'),
     path('pdpo', views.pdpo, name='pdpo'),
     path('contact', views.contact, name='contact'),
-    path('infomoment', views.infomoment, name='contact'),
+    # path('infomoment', views.infomoment, name='infomoment'),
+    path('poelenfeest', views.poelenfeest, name='poelenfeest'),
     path('admin/', admin.site.urls),
 ]

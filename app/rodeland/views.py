@@ -24,4 +24,6 @@ def contact(request):
 
 def infomoment(request):
     return render(request, 'infomoment.html')
-    
+
+def poelenfeest(request):
+    return render(request, 'poelenfeest.html')
