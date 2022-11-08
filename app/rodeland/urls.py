@@ -29,4 +29,7 @@ urlpatterns = [
     # path('infomoment', views.infomoment, name='infomoment'),
     path('poelenfeest', views.poelenfeest, name='poelenfeest'),
     path('admin/', admin.site.urls),
+
+    ## redirects
+    path('rodelandbrood', views.rodelandbrood),
 ]

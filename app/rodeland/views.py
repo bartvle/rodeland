@@ -1,7 +1,7 @@
 """
 """
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def start(request):
@@ -27,3 +27,9 @@ def infomoment(request):
 
 def poelenfeest(request):
     return render(request, 'poelenfeest.html')
+
+
+## redirects
+
+def rodelandbrood(request):
+    return redirect('https://sites.google.com/view/rodelandbrood')
