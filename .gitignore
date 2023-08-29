@@ -3,6 +3,7 @@ __pycache__
 venv
 
 app/rodeland/static/*
+!app/rodeland/static/*.scss
 !app/rodeland/static/*.css
 
 db.sqlite3
