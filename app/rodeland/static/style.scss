@@ -114,21 +114,17 @@ a.color1 {
 }
 
 .my-button {
+    display: block;
     color: #F5906D;
     background-color: #004434;
     border-color: #004434;
+    text-decoration: none;
 }
 
 .my-button:hover {
     color: #004434;
     background-color: #F5906D;
     border-color: #F5906D;
-}
-
-.my-button:focus {
-    color: #F5906D;
-    background-color: #004434;
-    border-color: #004434;
 }
 
 #infomoment #title {
