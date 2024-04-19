@@ -1,8 +1,10 @@
-{% load google_analytics %}
+{% load google_analytics_gtag %}
 
 <!doctype html>
 <html lang="en">
     <head>
+        {% google_analytics_gtag %}
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +14,6 @@
 
         <title>Rodeland landschapsproject</title>
 
-        {% google_analytics %}
     </head>
     <body>
         <div id="wrap" class="d-flex flex-column">

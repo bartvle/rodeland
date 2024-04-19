@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-from .deploy import DEBUG, SECRET_KEY, ALLOWED_HOSTS
+from .deploy import DEBUG, SECRET_KEY, ALLOWED_HOSTS, GOOGLE_ANALYTICS_GTAG_PROPERTY_ID
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -117,8 +117,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'rodeland', 'static')]
-
-
-# Django-analytical
-
-GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-178445118-1'
