@@ -33,3 +33,7 @@ def poelenfeest(request):
 
 def rodelandbrood(request):
     return redirect('https://sites.google.com/view/rodelandbrood')
+
+
+def wetenschap_op_wieltjes(request):
+    return redirect('https://sites.google.com/view/wetenschap-op-wieltjes')

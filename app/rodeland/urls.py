@@ -32,4 +32,5 @@ urlpatterns = [
 
     ## redirects
     path('rodelandbrood', views.rodelandbrood),
+    path('wetenschap-op-wieltjes', views.wetenschap_op_wieltjes),
 ]
