@@ -19,8 +19,8 @@ def acties(request):
 def pdpo(request):
     return render(request, 'pdpo.html')
 
-def contact(request):
-    return render(request, 'contact.html')
+def wandel_fiets(request):
+    return render(request, 'wandel_fiets.html')
 
 def infomoment(request):
     return render(request, 'infomoment.html')

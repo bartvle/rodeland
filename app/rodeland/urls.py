@@ -25,9 +25,9 @@ urlpatterns = [
     path('wie', views.wie, name='wie'),
     path('acties', views.acties, name='acties'),
     path('pdpo', views.pdpo, name='pdpo'),
-    path('contact', views.contact, name='contact'),
     # path('infomoment', views.infomoment, name='infomoment'),
-    path('poelenfeest', views.poelenfeest, name='poelenfeest'),
+    # path('poelenfeest', views.poelenfeest, name='poelenfeest'),
+    path('wandel-fiets', views.wandel_fiets, name='wandel-fiets'),
     path('admin/', admin.site.urls),
 
     ## redirects

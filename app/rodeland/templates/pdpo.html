@@ -1,47 +1,42 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
-{% block embody %}
+{% block content %}
 
-<div id="pdpo" class="container-md mt-5">
-    <div class="card border-0">
-        <img class="card-img" src="/static/images/pdpo/Driesbeekvallei_Diepestraat.jpg" />
-        <div class="card-img-overlay">
-            <div class="h-100 w-80 position-relative">
-                <h1 class="position-absolute bottom-0 start-0 fw-bolder" style="color:#FFFFFF;">Plattelandsproject (PDPO) 'Samen+Werken aan het landbouwlandschap in Rodeland'</h5>
+<div id="pdpo" class="container mx-auto">
+    <div class="relative">
+        <img class="" src="/static/images/pdpo/Driesbeekvallei_Diepestraat.jpg" />
+        <div class="">
+            <div class="absolute bottom-0 left-0 p-6">
+                <h1 class="text-5xl font-bold text-white">Plattelandsproject (PDPO) 'Samen+Werken aan het landbouwlandschap in Rodeland'</h1>
             </div>
             
         </div>
     </div>
     
-    <p class="mt-3">
-        Land- en tuinbouwers creëren ons mooie landschap van nu en van de toekomst. Met dit plattelandsproject hebben de Rodelandpartners <span class="fw-bold color1">landbouwers uit Gavere, Melle, Merelbeke en Oosterzele</span> ondersteund om mee te werken aan bodemkwaliteit, akkerranden en kleine landschapselementen. Het project is gestart op 1 januari 2022 en liep tot en met 31 augustus 2024 en kreeg <span class="fw-bold color1">Europese, Vlaamse en provinciale cofinanciering</span>. Benieuwd naar wat er op 2,5 jaar allemaal gerealiseerd werd in het kader van dit project? Ontdek het allemaal in het <a class="text" href="/static/pdpo/Presentatie_overzicht_realisaties_PDPO_Rodeland.pdf" download>overzicht van de realisaties</a> dat werd voorgesteld tijdens het slotevenement van 26 juni 2024.
+    <p class="prose max-w-none mt-5">
+        Land- en tuinbouwers creëren ons mooie landschap van nu en van de toekomst. Met dit plattelandsproject hebben de Rodelandpartners <span class="font-bold text-rodeland-1">landbouwers uit Gavere, Melle, Merelbeke en Oosterzele</span> ondersteund om mee te werken aan bodemkwaliteit, akkerranden en kleine landschapselementen. Het project is gestart op 1 januari 2022 en liep tot en met 31 augustus 2024 en kreeg <span class="font-bold text-rodeland-1">Europese, Vlaamse en provinciale cofinanciering</span>. Benieuwd naar wat er op 2,5 jaar allemaal gerealiseerd werd in het kader van dit project? Ontdek het allemaal in het <a class="text-rodeland-3" href="/static/pdpo/Presentatie_overzicht_realisaties_PDPO_Rodeland.pdf" download>overzicht van de realisaties</a> dat werd voorgesteld tijdens het slotevenement van 26 juni 2024.
     </p>
 
-    <div>
-        <h2 class="mt-4">3 ha bloemenranden ingezaaid in Rodeland dankzij enthousiaste landbouwers en het PDPO-project!</h2>
-       
-        <p>
-            In 2022 en 2023 konden landbouwers uit Gavere, Melle, Merelbeke en Oosterzele bloemrijke akkerranden inzaaien in het kader van het PDPO-project 'Samen+Werken aan het landbouwlandschap in Rodeland'. Ze kregen <span class="fw-bold color1">gratis bloemenzaad</span>, een <span class="fw-bold color1">vergoeding</span> van 0,17 euro per m² en <span class="fw-bold color1">persoonlijk advies</span> van Boerennatuur Vlaanderen. In het totaal hebben <span class="fw-bold color1">21 landbouwers 3 ha bloemenranden ingezaaid</span>, verspreid over de 4 Rodelandgemeenten.
-        </p>
+    <div class="flex justify-center">
+        <img class="h-32 my-4" src="/static/images/pdpo/OKW_Oost_Vlaanderen.png">
+    </div>
 
-        <p>
-            Het aangeboden bloemenmengsel was een meerjarig mengsel dat 3 tot 5 jaar kan blijven staan en speciaal werd samengesteld om <span class="fw-bold color1">nuttige insecten</span> aan te trekken. Dit zijn niet alleen <span class="fw-bold color1">bestuivers</span>, zoals vlinders en bijen, maar ook <span class="fw-bold color1">natuurlijke plaagbestrijders</span> zoals lieveheersbeestjes en zweefvliegen. Deze laatste groep bestrijdt plaaginsecten (bv. bladluizen of graanhaantjes) in aanpalende gewassen, waardoor minder gewasbeschermingsproducten nodig zijn. Uit onderzoek blijkt dat het effect van de plaagbestrijding tot zeker 50 meter ver in het gewas kan reiken. Dit principe wordt functionele agrobiodiversiteit, kortweg FAB, genoemd.
-        </p>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">3 ha bloemenranden ingezaaid in Rodeland dankzij enthousiaste landbouwers en het PDPO-project!</h2>
+        <p>In 2022 en 2023 konden landbouwers uit Gavere, Melle, Merelbeke en Oosterzele bloemrijke akkerranden inzaaien in het kader van het PDPO-project 'Samen+Werken aan het landbouwlandschap in Rodeland'. Ze kregen <span class="font-bold text-rodeland-1">gratis bloemenzaad</span>, een <span class="font-bold text-rodeland-1">vergoeding</span> van 0,17 euro per m² en <span class="font-bold text-rodeland-1">persoonlijk advies</span> van Boerennatuur Vlaanderen. In het totaal hebben <span class="font-bold text-rodeland-1">21 landbouwers 3 ha bloemenranden ingezaaid</span>, verspreid over de 4 Rodelandgemeenten.</p>
+        <p>Het aangeboden bloemenmengsel was een meerjarig mengsel dat 3 tot 5 jaar kan blijven staan en speciaal werd samengesteld om <span class="font-bold text-rodeland-1">nuttige insecten</span> aan te trekken. Dit zijn niet alleen <span class="font-bold text-rodeland-1">bestuivers</span>, zoals vlinders en bijen, maar ook <span class="font-bold text-rodeland-1">natuurlijke plaagbestrijders</span> zoals lieveheersbeestjes en zweefvliegen. Deze laatste groep bestrijdt plaaginsecten (bv. bladluizen of graanhaantjes) in aanpalende gewassen, waardoor minder gewasbeschermingsproducten nodig zijn. Uit onderzoek blijkt dat het effect van de plaagbestrijding tot zeker 50 meter ver in het gewas kan reiken. Dit principe wordt functionele agrobiodiversiteit, kortweg FAB, genoemd.</p>
+        <p>Ook vogels en andere dieren vinden beschutting en voedsel in een bloemenrand. Bovendien verfraaien bloemenranden het landschap en worden ze sterk geapprecieerd door het publiek. Veel landbouwers krijgen positieve reacties van passanten.</p>
 
-        <p>
-            Ook vogels en andere dieren vinden beschutting en voedsel in een bloemenrand. Bovendien verfraaien bloemenranden het landschap en worden ze sterk geapprecieerd door het publiek. Veel landbouwers krijgen positieve reacties van passanten.
-        </p>
-
-        <div class="row">
-            <div class="col-6">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/Bloemenrand_detail_Rodeland_Merelbeke_LiesbetPersoons.jpg" />
+        <div class="grid grid-cols-2 gap-x-4">
+            <div>
+                <figure class="w-full m-0">
+                    <img class="" src="/static/images/pdpo/Bloemenrand_detail_Rodeland_Merelbeke_LiesbetPersoons.jpg" />
                     <figcaption class="figure-caption">Liesbet Persoons - Merelbeke</figcaption>
                 </figure>
             </div>
-            <div class="col-6">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/Bloemenrand_detail_Rodeland_Oosterzele_BrechtHerteleer.JPG" />
+            <div>
+                <figure class="w-full m-0">
+                    <img class="" src="/static/images/pdpo/Bloemenrand_detail_Rodeland_Oosterzele_BrechtHerteleer.JPG" />
                     <figcaption class="figure-caption">Brecht Herteleer - Oosterzele</figcaption>
                 </figure>
             </div>
@@ -60,72 +55,69 @@
         </div>
     </div>
 
-    <div>
-        <h2 class="mt-4">Landbouwers zelf aan het woord over hun bloemenranden</h2>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">Landbouwers zelf aan het woord over hun bloemenranden</h2>
         <p>Student Lisa Versnaeyen uit Merelbeke ging in voorjaar 2024 in gesprek met enkele landbouwers die in 2022 of 2023 bloemenranden hadden ingezaaid in het kader van het PDPO-project 'Samen+Werken aan het landbouwlandschap in Rodeland'.</p>
-        <p>Ze vroeg hen onder andere naar de redenen waarom ze een bloemenrand hadden ingezaaid en maakte er een reeks korte <span class="fw-bold color1">filmpjes</span> van (<a class="text" href="https://www.youtube.com/shorts/GB8ri9sqkos" target="_blank">deel 1</a> <a class="text" href="https://www.youtube.com/shorts/fGGrd7b4MjA" target="_blank">deel 2</a> <a class="text" href="https://www.youtube.com/shorts/-vsUPHXW708" target="_blank">deel 3</a> <a class="text" href="https://www.youtube.com/shorts/rVWryZ6ZH24" target="_blank">deel 4</a> <a class="text" href="https://www.youtube.com/shorts/5ZboBw_Itm0" target="_blank">deel 5</a>)!</p>
-        <p>Ze deed dit in het kader van haar stage bij <a class="text" href="https://www.boerennatuur.be/" target="_blank">Boerennatuur Vlaanderen</a> voor de opleiding Agro- en Biotechnologie (optie Landbouw) aan de <a class="text" href="https://www.hogent.be/" target="_blank">HOGENT</a>.</p>
-        <div class="row">
-            <div class="col-3">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/2_Bloemenrand.JPG" />
+        <p>Ze vroeg hen onder andere naar de redenen waarom ze een bloemenrand hadden ingezaaid en maakte er een reeks korte <span class="font-bold text-rodeland-1">filmpjes</span> van (<a class="text-rodeland-3" href="https://www.youtube.com/shorts/GB8ri9sqkos" target="_blank">deel 1</a> <a class="text-rodeland-3" href="https://www.youtube.com/shorts/fGGrd7b4MjA" target="_blank">deel 2</a> <a class="text-rodeland-3" href="https://www.youtube.com/shorts/-vsUPHXW708" target="_blank">deel 3</a> <a class="text-rodeland-3" href="https://www.youtube.com/shorts/rVWryZ6ZH24" target="_blank">deel 4</a> <a class="text-rodeland-3" href="https://www.youtube.com/shorts/5ZboBw_Itm0" target="_blank">deel 5</a>)!</p>
+        <p>Ze deed dit in het kader van haar stage bij <a class="text-rodeland-3" href="https://www.boerennatuur.be/" target="_blank">Boerennatuur Vlaanderen</a> voor de opleiding Agro- en Biotechnologie (optie Landbouw) aan de <a class="text-rodeland-3" href="https://www.hogent.be/" target="_blank">HOGENT</a>.</p>
+        <div class="grid grid-cols-4 gap-4">
+            <div>
+                <figure class="m-0">
+                    <img src="/static/images/pdpo/2_Bloemenrand.JPG" />
                 </figure>
             </div>
-            <div class="col-3">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/5_Hendrik.jpg" />
+            <div>
+                <figure class="m-0">
+                    <img src="/static/images/pdpo/5_Hendrik.jpg" />
                 </figure>
             </div>
-            <div class="col-3">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/3_DenHalsberg.jpg" />
+            <div>
+                <figure class="m-0">
+                    <img src="/static/images/pdpo/3_DenHalsberg.jpg" />
                 </figure>
             </div>
-            <div class="col-3">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/7_Hof_ter_Elleve.jpg" />
+            <div>
+                <figure class="m-0">
+                    <img src="/static/images/pdpo/7_Hof_ter_Elleve.jpg" />
                 </figure>
             </div>
         </div>
     </div>
 
-    <div>
-        <h2 class="mt-4">Beheer van houtige kleine landschapselementen (KLE)</h2>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">Beheer van houtige kleine landschapselementen (KLE)</h2>
         <p>
-            Rodeland is rijk aan houtige kleine landschaps-elementen, maar de <span class="fw-bold color1">kosten voor beheer</span> lopen op. Waar dit hout vroeger gebruikt werd als brandhout en er voldoende vrijwilligers gevonden werden om mee te helpen, komt de inspanning nu vooral bij de eigenaar of gebruiker te liggen. Hierdoor worden tegenwoordig maar weinig nieuwe KLE's aangeplant.
+            Rodeland is rijk aan houtige kleine landschaps-elementen, maar de <span class="font-bold text-rodeland-1">kosten voor beheer</span> lopen op. Waar dit hout vroeger gebruikt werd als brandhout en er voldoende vrijwilligers gevonden werden om mee te helpen, komt de inspanning nu vooral bij de eigenaar of gebruiker te liggen. Hierdoor worden tegenwoordig maar weinig nieuwe KLE's aangeplant.
         </p>
         <p>
             Het beheer is niet alleen tijdrovend, maar bovendien ook een gevaarlijke klus. Recent zijn er nieuwe machines om het beheer efficiënter te maken.
         </p>
         <p>
-            Op <span class="fw-bold color1">24 november 2022</span> organiseerden we vanuit het PDPO-project samen met de Provincie Oost-Vlaanderen een <span class="fw-bold color1">infomoment rond het nut van knotbomen</span> in Oosterzele.
+            Op <span class="font-bold text-rodeland-1">24 november 2022</span> organiseerden we vanuit het PDPO-project samen met de Provincie Oost-Vlaanderen een <span class="font-bold text-rodeland-1">infomoment rond het nut van knotbomen</span> in Oosterzele.
         </p>
         <p>
-            De 60 deelnemers kregen een duidelijk overzicht van alle bestaande <span class="fw-bold color1">steunmaatregelen bij aanplant en beheer</span> van (knot)bomen, houtkanten, heggen en hagen in de 4 Rodelandgemeenten. De nuttige toepassingen van <span class="fw-bold color1">houtsnippers als duurzame energiebron</span> en <span class="fw-bold color1">als koolstofbron in de bodem</span> werden toegelicht. En via de live <span class="fw-bold color1">demo met velkop en kraan</span> konden de deelnemers ter plaatse zien hoe het onderhoudswerk efficiënt en veilig kan verlopen.
-        </p>
-        <p>
-            <span class="fw-bold color1">Gemist?</span> Geen nood, download <a class="text" href="/static/pdpo/Schema_steun_aanplant&beheer_KLE_Rodeland_V20221124.pdf" download>het handige schema</a> en <a class="text" href="/static/pdpo/Uitleg_steun_aanplant&beheer_KLE_Rodeland_V20221124.pdf" download>het document met meer uitleg</a> over waar je als inwoner van Gavere, Melle, Merelbeke en Oosterzele terecht kan voor steun bij de aanplant en het beheer van je houtige KLE.
+            De 60 deelnemers kregen een duidelijk overzicht van alle bestaande <span class="font-bold text-rodeland-1">steunmaatregelen bij aanplant en beheer</span> van (knot)bomen, houtkanten, heggen en hagen in de 4 Rodelandgemeenten. De nuttige toepassingen van <span class="font-bold text-rodeland-1">houtsnippers als duurzame energiebron</span> en <span class="font-bold text-rodeland-1">als koolstofbron in de bodem</span> werden toegelicht. En via de live <span class="font-bold text-rodeland-1">demo met velkop en kraan</span> konden de deelnemers ter plaatse zien hoe het onderhoudswerk efficiënt en veilig kan verlopen.
         </p>
 
-        <div class="row">
-            <div class="col-6">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/20221124_111230.jpg" />
+        <div class="grid grid-cols-2 gap-4">
+            <div class="">
+                <figure class="m-0">
+                    <img class="" src="/static/images/pdpo/20221124_111230.jpg" />
                 </figure>
             </div>
-            <div class="col-6">
-                <figure class="figure">
-                    <img class="img-fluid" src="/static/images/pdpo/20221124_120611.jpg" />
+            <div class="">
+                <figure class="m-0">
+                    <img class="" src="/static/images/pdpo/20221124_120611.jpg" />
                 </figure>
             </div>
         </div>
 
     </div>
 
-    <div>
-        <h2 class="mt-4">Nieuw subsidiereglement voor houtige KLE en bloemenranden in de 4 Rodelandgemeenten!</h2>
-        <p>In het kader van het plattelandsproject werd nauw samengewerkt met de 4 Rodelandgemeenten om tot een nieuw gemeentelijk subsidiereglement voor de aanplant en het beheer van houtige kleine landschapselementen te komen, helemaal identiek in de 4 gemeenten!</p>
-        <p class="fst-italic">Opgelet: je blijft je subsidie aanvragen bij de gemeente waarin je KLE is gelegen.</p>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">Nieuw subsidiereglement voor houtige KLE en bloemenranden in de Rodelandgemeenten!</h2>
+        <p>In het kader van het plattelandsproject werd nauw samengewerkt met de Rodelandgemeenten om tot een nieuw gemeentelijk subsidiereglement voor de aanplant en het beheer van houtige kleine landschapselementen te komen, helemaal identiek in de 3 gemeenten!</p>
+        <p class="italic">Opgelet: je blijft je subsidie aanvragen bij de gemeente waarin je KLE is gelegen.</p>
         <p>Kort even de belangrijkste nieuwigheden op een rij:
             <ul>
                 <li>Bondig en helder, een toegankelijk reglement voor de aanvragers en het gemeentepersoneel;</li>
@@ -136,64 +128,61 @@
         </p>
         <p>Het nieuwe subsidiereglement trad in werking op 1 juli 2024. Je vindt het aanvraagformulier en meer info op de gemeentelijke websites:
             <ul>
-                <li><a class="text" href="https://gavere.be/burger/milieu-en-natuur/subsidies/subsidie-voor-kleine-landschapselementen-en-bloemenranden" target="_blank">Gavere</a></li>
-                <li><a class="text" href="https://www.melle.be/subsidies-voor-kleine-landschapselementen" target="_blank">Melle</a></li>
-                <li><a class="text" href="https://www.merelbeke.be/afval-en-milieu/milieubeleid/subsidie-voor-de-aanleg-en-het-beheer-van-kleine-landschapselementen" target="_blank">Merelbeke</a></li>
-                <li><a class="text" href="https://www.oosterzele.be/burger/milieu-en-natuur/openbaar-groen/kleine-landschapselementen" target="_blank">Oosterzele</a></li>
+                <li><a class="text-rodeland-3" href="https://gavere.be/burger/milieu-en-natuur/subsidies/subsidie-voor-kleine-landschapselementen-en-bloemenranden" target="_blank">Gavere</a></li>
+                <li>Merelbeke-Melle (binnenkort online)</li>
+                <li><a class="text-rodeland-3" href="https://www.oosterzele.be/burger/milieu-en-natuur/openbaar-groen/kleine-landschapselementen" target="_blank">Oosterzele</a></li>
             </ul>
         </p>
-        <div class="row">
-            <div class="col-6">
-                <figure class="figure">
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <figure class="m-0">
                     <img class="img-fluid" src="/static/images/pdpo/KLE_Oosterzele_02.jpg" />
                 </figure>
             </div>
-            <div class="col-6">
-                <figure class="figure">
+            <div>
+                <figure class="m-0">
                     <img class="img-fluid" src="/static/images/pdpo/KLE_Melle.jpg" />
                 </figure>
             </div>
         </div>
     </div>
 
-    <div>
-        <h2 class="mt-4">Onderzaai van rietzwenkgras bij maïs ter verbetering van de bodemkwaliteit</h2>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">Onderzaai van rietzwenkgras bij maïs ter verbetering van de bodemkwaliteit</h2>
         <p>Onderzaai van rietzwenkgras in maïs gaat nitraatuitspoeling tegen en verhoogt het organisch stofgehalte in de bodem, maar wordt nog niet vaak toegepast door landbouwers in Rodeland.</p>
         <p>Hierover vond op 20 maart 2023 op de Proefhoeve van Bottelare een infoavond plaats. De deelnemende landbouwers kregen o.a. uitleg over de resultaten van de proeven met rietzwenkgras in inderzaai op de Proefhoeve van Bottelare (zandleemgrond).</p>
-        <p>De onderzoeksresultaten en de daaraan gekoppelde conclusies en aanbevelingen van de onderzoekers, kunnen nagelezen worden in de <a class="text" href="/static/pdpo/Infofiche Rietzwenkgras_PDPO_Rodeland_mei2024.pdf" download>infofiche ‘Onderzaai van rietzwenkgras bij maïs’</a>.</p>
-        <p>Geïnteresseerde landbouwers uit de vier Rodelandgemeenten konden nadien meedoen aan de <span class="fw-bold color1">gratis groepsaankoop</span> rietzwenkgras.</p>
+        <p>De onderzoeksresultaten en de daaraan gekoppelde conclusies en aanbevelingen van de onderzoekers, kunnen nagelezen worden in de <a class="text-rodeland-3" href="/static/pdpo/Infofiche Rietzwenkgras_PDPO_Rodeland_mei2024.pdf" download>infofiche ‘Onderzaai van rietzwenkgras bij maïs’</a>.</p>
+        <p>Geïnteresseerde landbouwers uit de vier Rodelandgemeenten konden nadien meedoen aan de <span class="font-bold text-rodeland-1">gratis groepsaankoop</span> rietzwenkgras.</p>
     </div>
 
-    <div>
-        <h2 class="mt-4">Machinedemo en proefvelden voor duurzame landbouw van 23 augustus 2023 in beeld</h2>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">Machinedemo en proefvelden voor duurzame landbouw van 23 augustus 2023 in beeld</h2>
         <p>Het was een zeer geslaagde namiddag rond duurzame landbouw bij Loonbedrijf Suenaert in Scheldewindeke: boeiende sprekers, veel geïnteresseerde deelnemers, een unieke machinedemo niet-kerende bodembewerking, bloemenranden met deskundige uitleg van HOGENT en maar liefst 33 proefvelden van Jorion Philip-Seeds!</p>
         <p>Bovendien werd er bijscholing fytolicentie aan gekoppeld, het was prachtig weer en er waren lekkere korte keten frietjes!</p>
         <p>Medeorganisator Boerennatuur VL maakte er een mooi filmpje van:</p>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" width="100%" height="400" src="https://www.youtube.com/embed/IkDXK6iSanw?si=SWcnqZW7E8E7-K9s" allowfullscreen></iframe>
         </div>
-        <p class="mt-3">De organisatie van deze demonamiddag kaderde in het PDPO project 'Samen+Werken aan het landbouwlandschap in Rodeland' in samenwerking met <a class="text" href="https://www.jorion-philip-seeds.be/nl/" target="_blank">Jorion Philip-Seeds</a>, <a class="text" href="https://suenaert.be/" target="_blank">Loonbedrijf Suenaert</a> en <a class="text" href="https://www.agrocampus.be/" target="_blank">AgroCampus</a> (fytolicentie). Met dank aan <a class="text" href="https://www.beyne.com/nl" target="_blank">Beyne</a>, <a class="text" href="https://actisol-agri.fr/" target="_blank">Actisol</a>, <a class="text" href="https://www.imants.com/" target="_blank">Imants</a>, <a class="text" href="https://www.demuynck-agri.be/" target="_blank">De Muynck Agri</a>, <a class="text" href="https://www.vanderroostnv.be/" target="_blank">Vanderroost</a> en <a class="text" href="https://suenaert.be/" target="_blank">Loonbedrijf Suenaert</a> voor hun medewerking aan de machinedemo.</p>
+        <p class="mt-3">De organisatie van deze demonamiddag kaderde in het PDPO project 'Samen+Werken aan het landbouwlandschap in Rodeland' in samenwerking met <a class="text-rodeland-3" href="https://www.jorion-philip-seeds.be/nl/" target="_blank">Jorion Philip-Seeds</a>, <a class="text-rodeland-3" href="https://suenaert.be/" target="_blank">Loonbedrijf Suenaert</a> en <a class="text-rodeland-3" href="https://www.agrocampus.be/" target="_blank">AgroCampus</a> (fytolicentie). Met dank aan <a class="text-rodeland-3" href="https://www.beyne.com/nl" target="_blank">Beyne</a>, <a class="text-rodeland-3" href="https://actisol-agri.fr/" target="_blank">Actisol</a>, <a class="text-rodeland-3" href="https://www.imants.com/" target="_blank">Imants</a>, <a class="text-rodeland-3" href="https://www.demuynck-agri.be/" target="_blank">De Muynck Agri</a>, <a class="text-rodeland-3" href="https://www.vanderroostnv.be/" target="_blank">Vanderroost</a> en <a class="text-rodeland-3" href="https://suenaert.be/" target="_blank">Loonbedrijf Suenaert</a> voor hun medewerking aan de machinedemo.</p>
     
-        <div class="row">
-            <div class="col-6">
-                <figure class="figure">
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <figure class="m-0">
                     <img class="img-fluid" src="/static/pdpo/20230823_DeLobelle_01.JPG" />
                 </figure>
             </div>
-            <div class="col-6">
-                <figure class="figure">
+            <div>
+                <figure class="m-0">
                     <img class="img-fluid" src="/static/pdpo/20230823_DeLobelle_02.JPG" />
                 </figure>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <figure class="figure">
+            <div>
+                <figure class="m-0">
                     <img class="img-fluid" src="/static/pdpo/20230823_DeLobelle_03.JPG" />
                 </figure>
             </div>
-            <div class="col-6">
-                <figure class="figure">
+            <div>
+                <figure class="m-0">
                     <img class="img-fluid" src="/static/pdpo/20230823_DeLobelle_04.JPG" />
                 </figure>
             </div>
@@ -207,12 +196,12 @@
     
     </div>
 
-    <div>
-        <h2 class="mt-4">Al fietsend kennismaken met het plattelandsproject van Rodeland</h2>
+    <div class="prose max-w-none">
+        <h2 class="text-4xl mt-8 text-rodeland-2 mb-2 font-normal">Al fietsend kennismaken met het plattelandsproject van Rodeland</h2>
         <p>Een 300-tal enthousiaste fietsers deden op 10 september 2023 mee aan onze Rodelandfietstocht.</p>
-        <p>De deelnemers fietsten langs mooie en nuttige <span class="fw-bold color1">bloemenranden</span> van landbouwers, kregen uitleg over wat je zoal kan doen met het <span class="fw-bold color1">hout van knotbomen</span>, hoe je een <span class="fw-bold color1">gezonde bodem</span> kan herkennen,… Ook de teelt van <span class="fw-bold color1">oesterzwammen & shiitakes, groene asperges en biogroenten</span> kent geen geheimen meer voor hen, net zoals het leven en het werk van de <span class="fw-bold color1">honingbijen</span> en de korte keten van het <a class="text" href="https://sites.google.com/view/rodelandbrood" target="_blank">Rodelandbrood</a>.</p>
+        <p>De deelnemers fietsten langs mooie en nuttige <span class="font-bold text-rodeland-1">bloemenranden</span> van landbouwers, kregen uitleg over wat je zoal kan doen met het <span class="font-bold text-rodeland-1">hout van knotbomen</span>, hoe je een <span class="font-bold text-rodeland-1">gezonde bodem</span> kan herkennen,… Ook de teelt van <span class="font-bold text-rodeland-1">oesterzwammen & shiitakes, groene asperges en biogroenten</span> kent geen geheimen meer voor hen, net zoals het leven en het werk van de <span class="font-bold text-rodeland-1">honingbijen</span> en de korte keten van het <a class="text-rodeland-3" href="https://sites.google.com/view/rodelandbrood" target="_blank">Rodelandbrood</a>.</p>
         <p>Om 14u was er een officieel startmoment op de Proefhoeve in Bottelare met gouverneur Carina Van Cauter, Jef Wittouck en Prof. Geert Haesaert.</p>
-        <div>
+        <div class="flex justify-center">
             <figure class="figure">
                 <img class="img-fluid" src="/static/pdpo/Fietskaart_10september2023_Pjotr.jpg" />
             </figure>

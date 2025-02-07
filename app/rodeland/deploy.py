@@ -3,3 +3,5 @@ DEBUG = True
 SECRET_KEY = 'thisisaveryspecialsecretkey'
 
 ALLOWED_HOSTS = []
+
+GOOGLE_ANALYTICS_GTAG_PROPERTY_ID = 'G-XXXXXXXXXX'

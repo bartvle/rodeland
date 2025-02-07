@@ -1,0 +1,90 @@
+{% load static %}
+{% load google_analytics_gtag %}
+
+<!doctype html>
+<html class="h-full" lang="en">
+    <head>
+        {% google_analytics_gtag %}
+
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Rodeland landschapsproject</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    </head>
+    <body class="h-full">
+        <div id="wrapper" class="h-full flex flex-col">
+
+            <div id="header">
+                
+                <nav class="border-b-8 border-rodeland-2 py-4">
+                    <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+                        <a href="/" class="flex items-center">
+                            <img src="/static/logo.png" class="h-24">
+                        </a>
+                        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                            </svg>
+                        </button>
+                        <div class="hidden w-full xl:block xl:w-auto bg-rodeland-1 mt-4 xl:mt-0" id="navbar-default">
+                            <ul class="flex flex-col text-rodeland-3 font-bold rounded-lg xl:flex-row">
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="/">Start</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="/wat">Wat</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="/wie">Wie</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="/acties">Acties</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="/pdpo">PDPO</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="https://sites.google.com/view/rodelandbrood" target="_blank">Rodelandbrood</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="/wandel-fiets">Wandel- en fietsroutes</a></li>
+                                <li class="hover:text-rodeland-1 hover:bg-rodeland-3"><a class="block p-4" href="https://sites.google.com/view/wetenschap-op-wieltjes" target="_blank">Wetenschap op wieltjes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+            {% block main %}
+            <div id="main" class="grow py-10">
+                <div class="mx-auto px-4 sm:px-6 lg:px-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+            {% endblock %}
+
+            <div id="footer" class="bg-rodeland-2 py-4">
+                <div class="container mx-auto flex justify-center items-center">
+                    <div>
+                        &copy; {% now "Y" %} Rodeland landschapsproject - <a class="underline" href="mailto:info@rodeland.be">info@rodeland.be</a> - Sofie Van Brussel, Charles de Kerchovelaan 189, 9000 Gent
+                    </div>
+                    <div class="ml-6">
+                        <a href="https://www.facebook.com/Rodelandproject/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-6 w-6" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="https://unpkg.com/vue@3.4/dist/vue.global.prod.js"></script>
+        <script setup>
+            import { onMounted } from 'vue'
+            import { initFlowbite } from 'flowbite'
+            
+            // initialize components based on data attribute selectors
+            onMounted(() => {
+                initFlowbite();
+            })
+        </script>
+    </body>
+</html>
