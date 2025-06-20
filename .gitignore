@@ -8,3 +8,6 @@ app/rodeland/static/*
 
 db.sqlite3
 app/rodeland/deploy.py
+
+node_modules
+*.json
