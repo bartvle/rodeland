@@ -12,7 +12,7 @@
 
         <title>Rodeland landschapsproject</title>
 
-        <link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
     </head>
@@ -22,7 +22,7 @@
             <div id="header">
                 
                 <nav class="border-b-8 border-rodeland-2 py-4">
-                    <div class="container flex flex-wrap items-center justify-between mx-auto py-4">
+                    <div class="container max-w-screen-xl mx-auto flex flex-wrap items-center justify-between py-4">
                         <a href="/" class="flex items-center">
                             <img src="/static/logo.png" class="h-24">
                         </a>
@@ -58,7 +58,7 @@
             {% endblock %}
 
             <div id="footer" class="bg-rodeland-2 py-4">
-                <div class="container mx-auto flex justify-center items-center">
+                <div class="container max-w-screen-xl mx-auto flex justify-center items-center">
                     <div>
                         &copy; {% now "Y" %} Rodeland landschapsproject - <a class="underline" href="mailto:info@rodeland.be">info@rodeland.be</a> - Sofie Van Brussel, Charles de Kerchovelaan 189, 9000 Gent
                     </div>

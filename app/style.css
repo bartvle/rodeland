@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-rodeland-1: #004434;
+  --color-rodeland-2: #80B687;
+  --color-rodeland-3: #F5906D;
+}
